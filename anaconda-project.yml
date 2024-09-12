@@ -1,0 +1,24 @@
+name: Data Cataloging
+description: Use Intake to distribute and ingest data [Tutorial]
+
+commands:
+  server:
+    unix: python main.py catalog.yml
+    supports_http_options: true
+  gui:
+    unix: panel serve gui.py
+    supports_http_options: true
+
+packages:
+  - aiohttp ==3.9.5
+  - hvplot ==0.10.0
+  - intake ==0.7.0
+  - intake-parquet ==0.3.0
+  - ipykernel ==6.28.0
+  - nbconvert ==7.10.0
+  - panel ==1.4.4
+  - python ==3.11.*
+  - python-snappy ==0.6.1
+  - scipy ==1.13.1
+platforms:
+  - linux-64
